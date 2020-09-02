@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body{
+      background-image: url(images/bgp.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+    h1{
+      text-align: center;
+    }
+    .btn{
+      background-color: gray;
+      width: 80px;
+      height: 30px;
+    }
+    .btn:hover{
+      background-color:blueviolet;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact us </h1>
+  <div class="container">
+    <form method="POST" action="\contact.html">    
+        <div class="form-group">
+          <label for="name">Name : </label>&nbsp &nbsp
+          <input type="text" class="form-control" id="name" name = "name" placeholder="Enter your name">
+        </div>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label for="email">Email : </label>&nbsp &nbsp
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email">
+          </div><br>
+          <br><br>
+
+
+          <div class="form-group">
+            <label for="phone">Mobile : </label> &nbsp &nbsp
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your mobile number">
+          </div><br>
+          <br>
+       
+        <div class="form-group">
+          <label for="desc">Enter your Query
+          </label>
+          <input type="query" class="form-control" id="query" name="query" placeholder="Enter your query">
+         
+        </div>
+        <br><br>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+</div>
+</body>
+</html>
+
